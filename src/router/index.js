@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import NavList from '../components/NavList'
+import TestCase from '../components/TestCase'
+
 
 Vue.use(VueRouter)
 
@@ -15,6 +17,11 @@ const routes = [
     path: '/list',
     name: 'List',
     component: NavList
+  },
+  {
+    path: '/testcase',
+    name: 'TestCase',
+    component: TestCase
   },
   {
     path: '/about',

@@ -46,21 +46,21 @@
     </v-app-bar>
 
     <v-main>
-      <!-- <router-view/> -->
-      <HelloWorld/>
+      <router-view/>
+      <!-- <HelloWorld/> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
 import NavList from './components/NavList.vue';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    // HelloWorld,
     NavList,
   },
 
