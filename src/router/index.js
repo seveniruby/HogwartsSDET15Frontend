@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import NavList from '../components/NavList'
 import TestCase from '../components/TestCase'
-
+import TestReport from '../components/TestReport'
 
 Vue.use(VueRouter)
 
@@ -22,6 +22,11 @@ const routes = [
     path: '/testcase',
     name: 'TestCase',
     component: TestCase
+  },
+  {
+    path: '/report',
+    name: 'Report',
+    component: TestReport
   },
   {
     path: '/about',
