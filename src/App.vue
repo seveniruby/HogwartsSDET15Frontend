@@ -1,9 +1,17 @@
 <template>
   <v-app>
+
+      <v-navigation-drawer app clipped>
+    <!-- -->
+    <nav-list/>
+  </v-navigation-drawer>
+
     <v-app-bar
       app
       color="primary"
       dark
+      clipped-left
+      
     >
       <div class="d-flex align-center">
         <v-img
@@ -38,6 +46,7 @@
     </v-app-bar>
 
     <v-main>
+      <!-- <router-view/> -->
       <HelloWorld/>
     </v-main>
   </v-app>
@@ -45,12 +54,14 @@
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import NavList from './components/NavList.vue';
 
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
+    NavList,
   },
 
   data: () => ({
