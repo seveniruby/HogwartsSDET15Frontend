@@ -17,10 +17,10 @@
         cols="12"
         md="6"
       >
-        <v-row
+        <!-- <v-row
           class="fill-height"
           align="center"
-        >
+        > -->
           <v-item-group
             v-model="selectedGradient"
             mandatory
@@ -48,7 +48,7 @@
               </v-item>
             </v-row>
           </v-item-group>
-        </v-row>
+        <!-- </v-row> -->
       </v-col>
 
       <v-col
@@ -66,15 +66,15 @@
       </v-col>
 
       <v-col cols="6">
-        <v-row
+        <!-- <v-row
           class="fill-height"
           align="center"
-        >
+        > -->
           <v-switch
             v-model="fill"
             label="Filled"
           ></v-switch>
-        </v-row>
+        <!-- </v-row> -->
       </v-col>
 
       <v-col
