@@ -80,7 +80,7 @@ export default {
           }).then( response => {
               if(response.data.errcode===0){
                   console.log(response.data)
-                  this.$router.push('/testcase')
+                  this.$router.push('/dashboard/testcase')
               }
           })
 

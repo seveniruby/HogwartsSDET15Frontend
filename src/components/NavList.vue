@@ -15,7 +15,7 @@
         </v-list-item-content>
       </template>
 
-      <v-list-item v-for="([title, icon], i) in admins" :key="i" link to="/testcase" >
+      <v-list-item v-for="([title, icon], i) in admins" :key="i" link to="/dashboard/testcase" >
         <v-list-item-title v-text="title"></v-list-item-title>
 
         <v-list-item-icon>
@@ -31,7 +31,7 @@
         </v-list-item-content>
       </template>
 
-      <v-list-item v-for="([title, icon], i) in cruds" :key="i" link to="/report" >
+      <v-list-item v-for="([title, icon], i) in cruds" :key="i" link to="/dashboard/report" >
         <v-list-item-title v-text="title"></v-list-item-title>
 
         <v-list-item-icon>
