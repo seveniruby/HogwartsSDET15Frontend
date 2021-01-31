@@ -1,10 +1,7 @@
 <template>
   <v-app>
 
-      <v-navigation-drawer app clipped>
-    <!-- -->
-    <nav-list/>
-  </v-navigation-drawer>
+
 
     <v-app-bar
       app
@@ -54,14 +51,14 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld';
-import NavList from './components/NavList.vue';
+// import NavList from './components/NavList.vue';
 
 export default {
   name: 'App',
 
   components: {
     // HelloWorld,
-    NavList,
+    // NavList,
   },
 
   data: () => ({

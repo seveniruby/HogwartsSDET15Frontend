@@ -1,5 +1,3 @@
-import { from } from "core-js/fn/array";
-
 import axios from "axios";
 
 const http = axios.create({

@@ -4,10 +4,15 @@ import Home from '../views/Home.vue'
 import NavList from '../components/NavList'
 import TestCase from '../components/TestCase'
 import TestReport from '../components/TestReport'
+import Login from '../components/Login'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/login',
+    component: Login
+  },
   {
     path: '/',
     name: 'Home',
