@@ -5,6 +5,7 @@ import NavList from '../components/NavList'
 import TestCase from '../components/TestCase'
 import TestReport from '../components/TestReport'
 import Login from '../components/Login'
+import DashBoard from '../components/DashBoard'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,23 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/dashboard',
+    component: DashBoard,
+    children: [
+      {
+        path: 'testcase',
+        name: 'TestCase',
+        component: TestCase
+      },
+      {
+        path: 'report',
+        name: 'Report',
+        component: TestReport
+      },
+    ]
+
   },
   {
     path: '/list',
