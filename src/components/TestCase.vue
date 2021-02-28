@@ -1,8 +1,23 @@
 <template>
+<div>
+    <v-card-title>
+      Nutrition
+      <v-spacer></v-spacer>
+      <v-text-field
+        v-model="search"
+        append-icon="mdi-magnify"
+        label="Search"
+        single-line
+        hide-details
+      ></v-text-field>
+    </v-card-title>
+
   <v-data-table
     :headers="headers"
     :items="testcases"
     sort-by="calories"
+    show-select
+    :search='search'
     class="elevation-1"
   >
     <template v-slot:top>
@@ -13,7 +28,10 @@
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on, attrs }">
             <v-btn color="primary" dark class="mb-2" v-bind="attrs" v-on="on">
-              添加
+              添加用例
+            </v-btn>
+            <v-btn color="primary" dark class="mb-2" v-bind="attrs" v-on="on">
+              添加任务
             </v-btn>
           </template>
           <v-card>
@@ -89,6 +107,7 @@
       <v-btn color="primary" @click="initialize"> Reset </v-btn>
     </template>
   </v-data-table>
+</div>
 </template>
 
 
@@ -96,6 +115,7 @@
   import http from '@/http/http'
   export default {
     data: () => ({
+      search: '',
       dialog: false,
       dialogDelete: false,
       headers: [
